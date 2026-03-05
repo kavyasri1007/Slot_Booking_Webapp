@@ -1,0 +1,20 @@
+<form action="/login" method="post">
+   <input type="email" name="email" placeholder="Email" required>
+   <input type="password" name="password" placeholder="Password" required>
+   <button type="submit">Login</button>
+</form>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Blue Apple App</h1>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+        <a href="/users">View Users</a>
+    </div>
+</body>
+</html>
